@@ -50,7 +50,6 @@ public class MetricTest {
         Assert.assertNotNull(cloudController);
         Assert.assertEquals(cloudController.getInstances().get(0).getIp(), "172.16.1.49");
         Assert.assertEquals(cloudController.getInstances().get(1).getIp(), "172.16.1.50");
-        System.out.println(metric.toYaml());
     }
 
 }
