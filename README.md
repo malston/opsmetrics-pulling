@@ -18,16 +18,4 @@ export DUMP_FILE=metrics.yml (Default to be metrics.yml)
   java -jar target/metrics-0.0.1-SNAPSHOT.jar
   ```
 
-* Sample snippet
-
-  As below. UAA is the job name. It may have multiple instances (VMs). Each VM has the following attributes (JMX MBean attributes) to provide the visibility
-
-  ```
-  uaa: !!metrics.objects.Job
-   instances:
-     0:
-       attributes:
-       - name: healthy
-         value: '1.0'
-       ip: 172.16.1.52
-  ```
+* Sample produced file [metrics.yml](metrics.yml)

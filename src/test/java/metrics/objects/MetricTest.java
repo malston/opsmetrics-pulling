@@ -41,7 +41,7 @@ public class MetricTest {
         metric.addJob(mbean2,null);
         metric.addJob(mbean3,null);
         metric.addJob(mbean4,null);
-        Map<String, Job> jobs = metric.getJobs();
+        Map<String, Job> jobs = metric.getJobs().get("UntitledDevMetrics");
         Job metronAgent = jobs.get("MetronAgent");
         Assert.assertNotNull(metronAgent);
         Assert.assertEquals(metronAgent.getInstances().get(0).getIp(), "172.16.1.47");

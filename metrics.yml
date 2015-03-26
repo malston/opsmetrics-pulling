@@ -1,0 +1,1934 @@
+!!metrics.objects.Metric
+jobs:
+  UntitledDevMetrics:
+    LoggregatorServer: !!metrics.objects.Job
+      instances:
+        0:
+          attributes:
+          - name: LoggregatorServer.messageRouter.numberOfSyslogSinks
+            value: '0.0'
+          - name: LoggregatorServer.memoryStats.numFrees
+            value: '2.3773788E7'
+          - name: LoggregatorServer.messageRouter.numberOfWebsocketSinks
+            value: '0.0'
+          - name: LoggregatorServer.agentListener.receivedMessageCount
+            value: '10715.0'
+          - name: LoggregatorServer.signatureVerifier.validSignatures
+            value: '280638.0'
+          - name: LoggregatorServer.dropsondeUnmarshaller.logMessageReceived
+            value: '0.0'
+          - name: LoggregatorServer.httpServer.numberOfMessagesDroppedInParseEnvelopes
+            value: '0.0'
+          - name: LoggregatorServer.dropsondeUnmarshaller.httpStartReceived
+            value: '0.0'
+          - name: LoggregatorServer.memoryStats.numBytesAllocatedStack
+            value: '524288.0'
+          - name: LoggregatorServer.numGoRoutines
+            value: '55.0'
+          - name: LoggregatorServer.dropsondeUnmarshaller.valueMetricReceived
+            value: '117899.0'
+          - name: LoggregatorServer.dropsondeUnmarshaller.heartbeatReceived
+            value: '121460.0'
+          - name: LoggregatorServer.dropsondeUnmarshaller.counterEventReceived
+            value: '41279.0'
+          - name: LoggregatorServer.memoryStats.numMallocs
+            value: '2.378451E7'
+          - name: LoggregatorServer.memoryStats.numBytesAllocated
+            value: '1707800.0'
+          - name: LoggregatorServer.dropsondeUnmarshaller.httpStopReceived
+            value: '0.0'
+          - name: healthy
+            value: '1.0'
+          - name: LoggregatorServer.agentListener.currentBufferCount
+            value: '0.0'
+          - name: LoggregatorServer.memoryStats.lastGCPauseTimeNS
+            value: '5022731.0'
+          - name: LoggregatorServer.httpServer.numberOfMessagesUnmarshalErrorsInParseEnvelopes
+            value: '0.0'
+          - name: LoggregatorServer.httpServer.numberOfMessagesUnmarshalledInParseEnvelopes
+            value: '0.0'
+          - name: LoggregatorServer.signatureVerifier.invalidSignatureErrors
+            value: '0.0'
+          - name: LoggregatorServer.dropsondeUnmarshaller.httpStartStopReceived
+            value: '0.0'
+          - name: LoggregatorServer.httpServer.receivedMessages
+            value: '10715.0'
+          - name: LoggregatorServer.numCpus
+            value: '1.0'
+          - name: LoggregatorServer.messageRouter.numberOfDumpSinks
+            value: '5.0'
+          - name: LoggregatorServer.dropsondeUnmarshaller.unmarshalErrors
+            value: '0.0'
+          - name: LoggregatorServer.dropsondeListener.currentBufferCount
+            value: '0.0'
+          - name: LoggregatorServer.memoryStats.numBytesAllocatedHeap
+            value: '1707800.0'
+          - name: LoggregatorServer.signatureVerifier.missingSignatureErrors
+            value: '0.0'
+          - name: LoggregatorServer.agentListener.receivedByteCount
+            value: '2717574.0'
+          - name: LoggregatorServer.dropsondeListener.receivedMessageCount
+            value: '280638.0'
+          - name: LoggregatorServer.dropsondeListener.receivedByteCount
+            value: '2.2212339E7'
+          ip: 172.16.1.58
+    LoggregatorDeaAgent: !!metrics.objects.Job
+      instances:
+        0:
+          attributes:
+          - name: LoggregatorDeaAgent.memoryStats.numFrees
+            value: '6559695.0'
+          - name: LoggregatorDeaAgent.memoryStats.numBytesAllocatedHeap
+            value: '1469936.0'
+          - name: LoggregatorDeaAgent.memoryStats.numBytesAllocated
+            value: '1469936.0'
+          - name: LoggregatorDeaAgent.memoryStats.numBytesAllocatedStack
+            value: '393216.0'
+          - name: LoggregatorDeaAgent.memoryStats.lastGCPauseTimeNS
+            value: '2195058.0'
+          - name: LoggregatorDeaAgent.memoryStats.numMallocs
+            value: '6567164.0'
+          - name: LoggregatorDeaAgent.numGoRoutines
+            value: '45.0'
+          - name: healthy
+            value: '1.0'
+          - name: LoggregatorDeaAgent.numCpus
+            value: '2.0'
+          ip: 172.16.1.57
+    DEA: !!metrics.objects.Job
+      instances:
+        0:
+          attributes:
+          - name: log_count[level=error,stack=lucid64]
+            value: '0.0'
+          - name: uptime_in_seconds[stack=lucid64]
+            value: '60961.0'
+          - name: dea_registry_running[stack=lucid64]
+            value: '5.0'
+          - name: total_warden_response_time_in_ms[stack=lucid64]
+            value: '2016138.0'
+          - name: dea_registry_starting[stack=lucid64]
+            value: '0.0'
+          - name: log_count[level=warn,stack=lucid64]
+            value: '28.0'
+          - name: dea_registry_disk_reserved[stack=lucid64]
+            value: '5120.0'
+          - name: mem_bytes[stack=lucid64]
+            value: '5.1965952E7'
+          - name: mem_free_bytes[stack=lucid64]
+            value: '1.3867167744E10'
+          - name: dea_registry_resuming[stack=lucid64]
+            value: '0.0'
+          - name: cpu_load_avg[stack=lucid64]
+            value: '0.01'
+          - name: available_memory_ratio[stack=lucid64]
+            value: '0.6875'
+          - name: dea_registry_evacuating[stack=lucid64]
+            value: '0.0'
+          - name: dea_registry_stopped[stack=lucid64]
+            value: '0.0'
+          - name: dea_registry_born[stack=lucid64]
+            value: '0.0'
+          - name: can_stage[stack=lucid64]
+            value: '1.0'
+          - name: dea_registry_mem_reserved[stack=lucid64]
+            value: '5120.0'
+          - name: dea_registry_crashed[stack=lucid64]
+            value: '0.0'
+          - name: warden_request_count[stack=lucid64]
+            value: '36092.0'
+          - name: available_disk_ratio[stack=lucid64]
+            value: '0.84375'
+          - name: dea_registry_deleted[stack=lucid64]
+            value: '0.0'
+          - name: reservable_stagers[stack=lucid64]
+            value: '6.0'
+          - name: log_count[level=fatal,stack=lucid64]
+            value: '0.0'
+          - name: dea_registry_stopping[stack=lucid64]
+            value: '0.0'
+          - name: healthy
+            value: '1.0'
+          - name: mem_used_bytes[stack=lucid64]
+            value: '2.96148992E9'
+          ip: 172.16.1.57
+    uaa: !!metrics.objects.Job
+      instances:
+        0:
+          attributes:
+          - name: healthy
+            value: '1.0'
+          ip: 172.16.1.52
+    CloudController: !!metrics.objects.Job
+      instances:
+        0:
+          attributes:
+          - name: cc.http_status.3XX
+            value: '0.0'
+          - name: cc.http_status.4XX
+            value: '0.0'
+          - name: log_count[level=fatal]
+            value: '0.0'
+          - name: cc.thread_info.thread_count
+            value: '21.0'
+          - name: cc.requests.outstanding
+            value: '0.0'
+          - name: cc.thread_info.event_machine.threadqueue.size
+            value: '0.0'
+          - name: cc.thread_info.event_machine.connection_count
+            value: '4.0'
+          - name: cc.http_status.5XX
+            value: '0.0'
+          - name: log_count[level=warn]
+            value: '1.0'
+          - name: log_count[level=error]
+            value: '0.0'
+          - name: cc.http_status.2XX
+            value: '880.0'
+          - name: cc.http_status.1XX
+            value: '0.0'
+          - name: mem_bytes
+            value: '1.0979328E8'
+          - name: cpu_load_avg
+            value: '0.0'
+          - name: uptime_in_seconds
+            value: '6589.0'
+          - name: total_users
+            value: '6.0'
+          - name: cc.thread_info.event_machine.resultqueue.size
+            value: '0.0'
+          - name: mem_free_bytes
+            value: '1.20731648E9'
+          - name: mem_used_bytes
+            value: '2.937925632E9'
+          - name: cc.requests.completed
+            value: '880.0'
+          - name: cc.thread_info.event_machine.resultqueue.num_waiting
+            value: '0.0'
+          - name: cc.uptime
+            value: '6589.0'
+          - name: healthy
+            value: '1.0'
+          - name: cc.thread_info.event_machine.threadqueue.num_waiting
+            value: '20.0'
+          ip: 172.16.1.47
+    MetronAgent: !!metrics.objects.Job
+      instances:
+        0:
+          attributes:
+          - name: MetronAgent.dropsondeMarshaller.logMessageMarshalled
+            value: '0.0'
+          - name: MetronAgent.legacyAgentListener.currentBufferCount
+            value: '0.0'
+          - name: MetronAgent.MessageAggregator.httpStartStopEmitted
+            value: '0.0'
+          - name: MetronAgent.legacyAgentListener.receivedMessageCount
+            value: '0.0'
+          - name: MetronAgent.memoryStats.numMallocs
+            value: '5500696.0'
+          - name: MetronAgent.dropsondeAgentListener.receivedMessageCount
+            value: '0.0'
+          - name: MetronAgent.MessageAggregator.uncategorizedEvents
+            value: '0.0'
+          - name: MetronAgent.MessageAggregator.httpUnmatchedStopReceived
+            value: '0.0'
+          - name: MetronAgent.numCpus
+            value: '1.0'
+          - name: MetronAgent.dropsondeUnmarshaller.httpStartStopReceived
+            value: '0.0'
+          - name: MetronAgent.legacyAgentListener.receivedByteCount
+            value: '0.0'
+          - name: MetronAgent.MessageAggregator.httpStopReceived
+            value: '0.0'
+          - name: MetronAgent.dropsondeMarshaller.heartbeatMarshalled
+            value: '0.0'
+          - name: MetronAgent.MessageAggregator.httpStartReceived
+            value: '0.0'
+          - name: MetronAgent.dropsondeMarshaller.httpStartMarshalled
+            value: '0.0'
+          - name: MetronAgent.memoryStats.numBytesAllocatedStack
+            value: '655360.0'
+          - name: healthy
+            value: '1.0'
+          - name: MetronAgent.dropsondeUnmarshaller.heartbeatReceived
+            value: '0.0'
+          - name: MetronAgent.dropsondeUnmarshaller.logMessageReceived
+            value: '0.0'
+          - name: MetronAgent.dropsondeAgentListener.currentBufferCount
+            value: '0.0'
+          - name: MetronAgent.dropsondeUnmarshaller.httpStopReceived
+            value: '0.0'
+          - name: MetronAgent.dropsondeUnmarshaller.valueMetricReceived
+            value: '0.0'
+          - name: MetronAgent.numGoRoutines
+            value: '80.0'
+          - name: MetronAgent.dropsondeMarshaller.counterEventMarshalled
+            value: '0.0'
+          - name: MetronAgent.dropsondeMarshaller.httpStartStopMarshalled
+            value: '0.0'
+          - name: MetronAgent.dropsondeUnmarshaller.counterEventReceived
+            value: '0.0'
+          - name: MetronAgent.memoryStats.lastGCPauseTimeNS
+            value: '9034822.0'
+          - name: MetronAgent.memoryStats.numBytesAllocated
+            value: '5278536.0'
+          - name: MetronAgent.memoryStats.numBytesAllocatedHeap
+            value: '5278536.0'
+          - name: MetronAgent.dropsondeMarshaller.marshalErrors
+            value: '0.0'
+          - name: MetronAgent.memoryStats.numFrees
+            value: '5490959.0'
+          - name: MetronAgent.dropsondeUnmarshaller.httpStartReceived
+            value: '0.0'
+          - name: MetronAgent.MessageAggregator.httpUnmatchedStartReceived
+            value: '0.0'
+          - name: MetronAgent.dropsondeMarshaller.httpStopMarshalled
+            value: '0.0'
+          - name: MetronAgent.dropsondeMarshaller.valueMetricMarshalled
+            value: '0.0'
+          - name: MetronAgent.dropsondeUnmarshaller.unmarshalErrors
+            value: '0.0'
+          - name: MetronAgent.dropsondeAgentListener.receivedByteCount
+            value: '0.0'
+          ip: 172.16.1.48
+    LoggregatorTrafficcontroller: !!metrics.objects.Job
+      instances:
+        0:
+          attributes:
+          - name: LoggregatorTrafficcontroller.memoryStats.numBytesAllocated
+            value: '1065440.0'
+          - name: LoggregatorTrafficcontroller.numCpus
+            value: '1.0'
+          - name: LoggregatorTrafficcontroller.memoryStats.numBytesAllocatedHeap
+            value: '1065440.0'
+          - name: LoggregatorTrafficcontroller.memoryStats.numMallocs
+            value: '4832702.0'
+          - name: LoggregatorTrafficcontroller.numGoRoutines
+            value: '28.0'
+          - name: LoggregatorTrafficcontroller.memoryStats.lastGCPauseTimeNS
+            value: '1363728.0'
+          - name: LoggregatorTrafficcontroller.memoryStats.numFrees
+            value: '4826129.0'
+          - name: healthy
+            value: '1.0'
+          - name: LoggregatorTrafficcontroller.memoryStats.numBytesAllocatedStack
+            value: '319488.0'
+          ip: 172.16.1.59
+    HM9000: !!metrics.objects.Job
+      instances:
+        0:
+          attributes:
+          - name: HM9000.HM9000.NumberOfAppsWithMissingInstances
+            value: '0.0'
+          - name: HM9000.HM9000.StopEvacuationComplete
+            value: '0.0'
+          - name: HM9000.HM9000.StopExtra
+            value: '5.0'
+          - name: HM9000.HM9000.StartEvacuating
+            value: '0.0'
+          - name: HM9000.HM9000.NumberOfRunningInstances
+            value: '8.0'
+          - name: HM9000.HM9000.NumberOfDesiredAppsPendingStaging
+            value: '0.0'
+          - name: HM9000.HM9000.DesiredStateSyncTimeInMilliseconds
+            value: '2.24568'
+          - name: HM9000.HM9000.NumberOfUndesiredRunningApps
+            value: '0.0'
+          - name: HM9000.memoryStats.numBytesAllocatedStack
+            value: '622592.0'
+          - name: HM9000.numGoRoutines
+            value: '74.0'
+          - name: healthy
+            value: '1.0'
+          - name: HM9000.HM9000.SavedHeartbeats
+            value: '760.0'
+          - name: HM9000.HM9000.NumberOfCrashedIndices
+            value: '0.0'
+          - name: HM9000.HM9000.NumberOfAppsWithAllInstancesReporting
+            value: '7.0'
+          - name: HM9000.numCpus
+            value: '1.0'
+          - name: HM9000.memoryStats.numMallocs
+            value: '593981.0'
+          - name: HM9000.HM9000.StopDuplicate
+            value: '0.0'
+          - name: HM9000.memoryStats.numBytesAllocated
+            value: '1266472.0'
+          - name: HM9000.memoryStats.numBytesAllocatedHeap
+            value: '1266472.0'
+          - name: HM9000.HM9000.StartCrashed
+            value: '0.0'
+          - name: HM9000.memoryStats.numFrees
+            value: '585411.0'
+          - name: HM9000.HM9000.ActualStateListenerStoreUsagePercentage
+            value: '0.00507'
+          - name: HM9000.HM9000.NumberOfDesiredApps
+            value: '7.0'
+          - name: HM9000.HM9000.NumberOfDesiredInstances
+            value: '8.0'
+          - name: HM9000.memoryStats.lastGCPauseTimeNS
+            value: '2143925.0'
+          - name: HM9000.HM9000.ReceivedHeartbeats
+            value: '760.0'
+          - name: HM9000.HM9000.NumberOfMissingIndices
+            value: '0.0'
+          - name: HM9000.HM9000.NumberOfCrashedInstances
+            value: '0.0'
+          - name: HM9000.HM9000.StartMissing
+            value: '1.0'
+          ip: 172.16.1.44
+    Router: !!metrics.objects.Job
+      instances:
+        0:
+          attributes:
+          - name: router.requests[component=login]
+            value: '18.0'
+          - name: router.responses[component=CloudController,status=xxx]
+            value: '0.0'
+          - name: router.responses[component=CloudController,status=4xx]
+            value: '48.0'
+          - name: router.responses[component=P-CS,status=2xx]
+            value: '1.0'
+          - name: router.requests[component=P-CS]
+            value: '1.0'
+          - name: router.latency.1m[component=app,dea_index=0]
+            value: '5.0E-7'
+          - name: router.latency.1m[component=CloudController]
+            value: '5.0E-7'
+          - name: router.routed_app_requests
+            value: '9.0'
+          - name: router.responses[component=app,dea_index=0,status=3xx]
+            value: '0.0'
+          - name: router.total_requests
+            value: '1785.0'
+          - name: router.latency.1m[component=login]
+            value: '5.0E-7'
+          - name: router.requests[component=app,dea_index=0]
+            value: '9.0'
+          - name: router.bad_gateways
+            value: '0.0'
+          - name: router.responses[component=app,dea_index=0,status=4xx]
+            value: '0.0'
+          - name: router.responses[component=uaa,status=5xx]
+            value: '0.0'
+          - name: router.responses[component=uaa,status=4xx]
+            value: '3.0'
+          - name: router.latency.1m[component=uaa]
+            value: '5.0E-7'
+          - name: router.requests[component=CloudController]
+            value: '1550.0'
+          - name: router.responses[component=login,status=3xx]
+            value: '0.0'
+          - name: router.responses[component=P-CS,status=5xx]
+            value: '0.0'
+          - name: router.responses[component=uaa,status=xxx]
+            value: '0.0'
+          - name: router.responses[component=CloudController,status=3xx]
+            value: '0.0'
+          - name: router.responses[component=login,status=xxx]
+            value: '0.0'
+          - name: router.responses[component=uaa,status=2xx]
+            value: '189.0'
+          - name: healthy
+            value: '1.0'
+          - name: router.requests[component=uaa]
+            value: '192.0'
+          - name: router.responses[component=P-CS,status=3xx]
+            value: '0.0'
+          - name: router.responses[component=app,dea_index=0,status=5xx]
+            value: '4.0'
+          - name: log_count[level=warn]
+            value: '26.0'
+          - name: router.responses[component=CloudController,status=5xx]
+            value: '1.0'
+          - name: router.responses[component=P-CS,status=4xx]
+            value: '0.0'
+          - name: router.responses[component=app,dea_index=0,status=2xx]
+            value: '5.0'
+          - name: router.responses[component=login,status=4xx]
+            value: '0.0'
+          - name: router.responses[component=CloudController,status=2xx]
+            value: '1501.0'
+          - name: uptime_in_seconds
+            value: '0.0'
+          - name: router.responses[component=login,status=2xx]
+            value: '18.0'
+          - name: router.ms_since_last_registry_update
+            value: '349.0'
+          - name: router.responses[component=uaa,status=3xx]
+            value: '0.0'
+          - name: router.latency.1m[component=P-CS]
+            value: '5.0E-7'
+          - name: router.rejected_requests
+            value: '13.0'
+          - name: router.responses[component=login,status=5xx]
+            value: '0.0'
+          - name: router.responses[component=P-CS,status=xxx]
+            value: '0.0'
+          - name: router.responses[component=app,dea_index=0,status=xxx]
+            value: '0.0'
+          - name: router.total_routes
+            value: '14.0'
+          ip: 172.16.1.195
+    login: !!metrics.objects.Job
+      instances:
+        0:
+          attributes:
+          - name: healthy
+            value: '1.0'
+          ip: 172.16.1.53
+    collector: !!metrics.objects.Job
+      instances:
+        0:
+          attributes:
+          - name: nats.latency.1m
+            value: '1.427387556617E12'
+          ip: 'null'
+    etcd: !!metrics.objects.Job
+      instances:
+        0:
+          attributes:
+          - name: etcd.leader.Followers
+            value: '0.0'
+          - name: etcd.store.CreateSuccess
+            value: '255.0'
+          - name: etcd.store.DeleteSuccess
+            value: '109.0'
+          - name: etcd.store.RaftTerm
+            value: '0.0'
+          - name: etcd.store.CompareAndDeleteSuccess
+            value: '0.0'
+          - name: etcd.store.EtcdIndex
+            value: '215769.0'
+          - name: etcd.store.CompareAndDeleteFail
+            value: '0.0'
+          - name: etcd.store.ExpireCount
+            value: '269.0'
+          - name: etcd.server.IsLeader
+            value: '0.0'
+          - name: etcd.store.CompareAndSwapFail
+            value: '221.0'
+          - name: etcd.store.GetsFail
+            value: '42965.0'
+          - name: healthy
+            value: '1.0'
+          - name: etcd.store.SetsSuccess
+            value: '113547.0'
+          - name: etcd.store.UpdateFail
+            value: '129.0'
+          - name: etcd.server.ReceivingRequestRate
+            value: '0.0'
+          - name: etcd.server.ReceivingBandwidthRate
+            value: '0.0'
+          - name: etcd.store.Watchers
+            value: '1.0'
+          - name: etcd.store.DeleteFail
+            value: '5.0'
+          - name: etcd.server.ReceivedAppendRequests
+            value: '0.0'
+          - name: etcd.server.SendingBandwidthRate
+            value: '0.0'
+          - name: etcd.store.UpdateSuccess
+            value: '4305.0'
+          - name: etcd.store.RaftIndex
+            value: '338642.0'
+          - name: etcd.server.SendingRequestRate
+            value: '0.0'
+          - name: etcd.store.CreateFail
+            value: '14.0'
+          - name: etcd.store.GetsSuccess
+            value: '547392.0'
+          - name: etcd.store.CompareAndSwapSuccess
+            value: '97284.0'
+          - name: etcd.store.SetsFail
+            value: '0.0'
+          - name: etcd.server.SentAppendRequests
+            value: '0.0'
+          ip: 172.16.1.43
+  VMSysMetrics:
+    router-partition-368048666964677f1c9a: !!metrics.objects.Job
+      instances:
+        0:
+          attributes:
+          - name: system.mem.percent
+            value: '11.0'
+          - name: system.cpu.wait
+            value: '0.0'
+          - name: system.disk.system.inode_percent
+            value: '36.0'
+          - name: system.swap.kb
+            value: '0.0'
+          - name: system.disk.ephemeral.inode_percent
+            value: '8.0'
+          - name: system.disk.ephemeral.percent
+            value: '26.0'
+          - name: system.healthy
+            value: '1.0'
+          - name: system.load.1m
+            value: '0.0'
+          - name: system.swap.percent
+            value: '0.0'
+          - name: system.cpu.sys
+            value: '0.0'
+          - name: system.mem.kb
+            value: '106976.0'
+          - name: system.disk.system.percent
+            value: '46.0'
+          - name: system.cpu.user
+            value: '0.1'
+          ip: 'null'
+    router-partition-a5f98d7cc5c1e6c83797: !!metrics.objects.Job
+      instances:
+        0:
+          attributes:
+          - name: system.mem.percent
+            value: '10.0'
+          - name: system.cpu.wait
+            value: '0.0'
+          - name: system.disk.system.inode_percent
+            value: '36.0'
+          - name: system.swap.kb
+            value: '0.0'
+          - name: system.disk.ephemeral.inode_percent
+            value: '8.0'
+          - name: system.disk.ephemeral.percent
+            value: '26.0'
+          - name: system.healthy
+            value: '1.0'
+          - name: system.load.1m
+            value: '0.0'
+          - name: system.swap.percent
+            value: '0.0'
+          - name: system.cpu.sys
+            value: '0.2'
+          - name: system.mem.kb
+            value: '105968.0'
+          - name: system.disk.system.percent
+            value: '46.0'
+          - name: system.cpu.user
+            value: '0.1'
+          ip: 'null'
+    mysql-partition-a5f98d7cc5c1e6c83797: !!metrics.objects.Job
+      instances:
+        0:
+          attributes:
+          - name: system.mem.percent
+            value: '7.0'
+          - name: system.cpu.wait
+            value: '0.0'
+          - name: system.disk.system.inode_percent
+            value: '34.0'
+          - name: system.swap.kb
+            value: '0.0'
+          - name: system.disk.ephemeral.inode_percent
+            value: '1.0'
+          - name: system.disk.ephemeral.percent
+            value: '5.0'
+          - name: system.healthy
+            value: '1.0'
+          - name: system.load.1m
+            value: '0.11'
+          - name: system.disk.persistent.inode_percent
+            value: '0.0'
+          - name: system.swap.percent
+            value: '0.0'
+          - name: system.cpu.sys
+            value: '0.4'
+          - name: system.mem.kb
+            value: '562472.0'
+          - name: system.disk.persistent.percent
+            value: '3.0'
+          - name: system.disk.system.percent
+            value: '46.0'
+          - name: system.cpu.user
+            value: '0.5'
+          ip: 'null'
+    health_manager-partition-368048666964677f1c9a: !!metrics.objects.Job
+      instances:
+        0:
+          attributes:
+          - name: system.mem.percent
+            value: '11.0'
+          - name: system.cpu.wait
+            value: '0.1'
+          - name: system.disk.system.inode_percent
+            value: '36.0'
+          - name: system.swap.kb
+            value: '0.0'
+          - name: system.disk.ephemeral.inode_percent
+            value: '0.0'
+          - name: system.disk.ephemeral.percent
+            value: '3.0'
+          - name: system.healthy
+            value: '1.0'
+          - name: system.load.1m
+            value: '0.07'
+          - name: system.swap.percent
+            value: '0.0'
+          - name: system.cpu.sys
+            value: '0.1'
+          - name: system.mem.kb
+            value: '109464.0'
+          - name: system.disk.system.percent
+            value: '46.0'
+          - name: system.cpu.user
+            value: '0.6'
+          ip: 'null'
+    mysql-partition-368048666964677f1c9a: !!metrics.objects.Job
+      instances:
+        0:
+          attributes:
+          - name: system.mem.percent
+            value: '7.0'
+          - name: system.cpu.wait
+            value: '0.0'
+          - name: system.disk.system.inode_percent
+            value: '36.0'
+          - name: system.swap.kb
+            value: '0.0'
+          - name: system.disk.ephemeral.inode_percent
+            value: '1.0'
+          - name: system.disk.ephemeral.percent
+            value: '5.0'
+          - name: system.healthy
+            value: '1.0'
+          - name: system.load.1m
+            value: '0.0'
+          - name: system.disk.persistent.inode_percent
+            value: '0.0'
+          - name: system.swap.percent
+            value: '0.0'
+          - name: system.cpu.sys
+            value: '0.1'
+          - name: system.mem.kb
+            value: '560416.0'
+          - name: system.disk.persistent.percent
+            value: '3.0'
+          - name: system.disk.system.percent
+            value: '46.0'
+          - name: system.cpu.user
+            value: '0.2'
+          ip: 'null'
+    cloud_controller-partition-368048666964677f1c9a: !!metrics.objects.Job
+      instances:
+        0:
+          attributes:
+          - name: system.mem.percent
+            value: '9.0'
+          - name: system.cpu.wait
+            value: '0.0'
+          - name: system.disk.system.inode_percent
+            value: '36.0'
+          - name: system.swap.kb
+            value: '7284.0'
+          - name: system.disk.ephemeral.inode_percent
+            value: '4.0'
+          - name: system.disk.ephemeral.percent
+            value: '41.0'
+          - name: system.healthy
+            value: '1.0'
+          - name: system.load.1m
+            value: '0.0'
+          - name: system.swap.percent
+            value: '0.0'
+          - name: system.cpu.sys
+            value: '0.2'
+          - name: system.mem.kb
+            value: '382152.0'
+          - name: system.disk.system.percent
+            value: '46.0'
+          - name: system.cpu.user
+            value: '0.3'
+          ip: 'null'
+    dea-partition-368048666964677f1c9a: !!metrics.objects.Job
+      instances:
+        0:
+          attributes:
+          - name: system.mem.percent
+            value: '5.0'
+          - name: system.cpu.wait
+            value: '0.1'
+          - name: system.disk.system.inode_percent
+            value: '36.0'
+          - name: system.swap.kb
+            value: '0.0'
+          - name: system.disk.ephemeral.inode_percent
+            value: '7.0'
+          - name: system.disk.ephemeral.percent
+            value: '25.0'
+          - name: system.healthy
+            value: '1.0'
+          - name: system.load.1m
+            value: '0.0'
+          - name: system.swap.percent
+            value: '0.0'
+          - name: system.cpu.sys
+            value: '0.4'
+          - name: system.mem.kb
+            value: '800224.0'
+          - name: system.disk.system.percent
+            value: '46.0'
+          - name: system.cpu.user
+            value: '0.5'
+          ip: 'null'
+    stanchion-partition-a5f98d7cc5c1e6c83797: !!metrics.objects.Job
+      instances:
+        0:
+          attributes:
+          - name: system.mem.percent
+            value: '10.0'
+          - name: system.cpu.wait
+            value: '0.0'
+          - name: system.disk.system.inode_percent
+            value: '34.0'
+          - name: system.swap.kb
+            value: '0.0'
+          - name: system.disk.ephemeral.inode_percent
+            value: '1.0'
+          - name: system.disk.ephemeral.percent
+            value: '2.0'
+          - name: system.healthy
+            value: '1.0'
+          - name: system.load.1m
+            value: '0.01'
+          - name: system.disk.persistent.inode_percent
+            value: '0.0'
+          - name: system.swap.percent
+            value: '0.0'
+          - name: system.cpu.sys
+            value: '0.1'
+          - name: system.mem.kb
+            value: '97188.0'
+          - name: system.disk.persistent.percent
+            value: '0.0'
+          - name: system.disk.system.percent
+            value: '46.0'
+          - name: system.cpu.user
+            value: '0.1'
+          ip: 'null'
+    cf-mongodb-partition-a5f98d7cc5c1e6c83797: !!metrics.objects.Job
+      instances:
+        0:
+          attributes:
+          - name: system.mem.percent
+            value: '8.0'
+          - name: system.cpu.wait
+            value: '0.0'
+          - name: system.disk.system.inode_percent
+            value: '36.0'
+          - name: system.swap.kb
+            value: '0.0'
+          - name: system.disk.ephemeral.inode_percent
+            value: '5.0'
+          - name: system.disk.ephemeral.percent
+            value: '25.0'
+          - name: system.healthy
+            value: '1.0'
+          - name: system.load.1m
+            value: '0.0'
+          - name: system.disk.persistent.inode_percent
+            value: '0.0'
+          - name: system.swap.percent
+            value: '0.0'
+          - name: system.cpu.sys
+            value: '0.1'
+          - name: system.mem.kb
+            value: '170284.0'
+          - name: system.disk.persistent.percent
+            value: '1.0'
+          - name: system.disk.system.percent
+            value: '46.0'
+          - name: system.cpu.user
+            value: '0.1'
+          ip: 'null'
+    rabbitmq-haproxy-partition-a5f98d7cc5c1e6c83797: !!metrics.objects.Job
+      instances:
+        0:
+          attributes:
+          - name: system.mem.percent
+            value: '4.0'
+          - name: system.cpu.wait
+            value: '0.0'
+          - name: system.disk.system.inode_percent
+            value: '36.0'
+          - name: system.swap.kb
+            value: '0.0'
+          - name: system.disk.ephemeral.inode_percent
+            value: '0.0'
+          - name: system.disk.ephemeral.percent
+            value: '1.0'
+          - name: system.healthy
+            value: '1.0'
+          - name: system.load.1m
+            value: '0.0'
+          - name: system.swap.percent
+            value: '0.0'
+          - name: system.cpu.sys
+            value: '0.0'
+          - name: system.mem.kb
+            value: '74788.0'
+          - name: system.disk.system.percent
+            value: '46.0'
+          - name: system.cpu.user
+            value: '0.0'
+          ip: 'null'
+    ssc-gemfire-locator-partition-313baf8885be4665e08d: !!metrics.objects.Job
+      instances:
+        0:
+          attributes:
+          - name: system.mem.percent
+            value: '20.0'
+          - name: system.cpu.wait
+            value: '0.3'
+          - name: system.disk.system.inode_percent
+            value: '34.0'
+          - name: system.swap.kb
+            value: '0.0'
+          - name: system.disk.ephemeral.inode_percent
+            value: '7.0'
+          - name: system.disk.ephemeral.percent
+            value: '42.0'
+          - name: system.healthy
+            value: '1.0'
+          - name: system.load.1m
+            value: '0.0'
+          - name: system.disk.persistent.inode_percent
+            value: '0.0'
+          - name: system.swap.percent
+            value: '0.0'
+          - name: system.cpu.sys
+            value: '0.4'
+          - name: system.mem.kb
+            value: '408692.0'
+          - name: system.disk.persistent.percent
+            value: '6.0'
+          - name: system.disk.system.percent
+            value: '53.0'
+          - name: system.cpu.user
+            value: '0.5'
+          ip: 'null'
+        1:
+          attributes:
+          - name: system.mem.percent
+            value: '20.0'
+          - name: system.cpu.wait
+            value: '0.3'
+          - name: system.disk.system.inode_percent
+            value: '34.0'
+          - name: system.swap.kb
+            value: '0.0'
+          - name: system.disk.ephemeral.inode_percent
+            value: '7.0'
+          - name: system.disk.ephemeral.percent
+            value: '42.0'
+          - name: system.healthy
+            value: '1.0'
+          - name: system.load.1m
+            value: '0.0'
+          - name: system.disk.persistent.inode_percent
+            value: '0.0'
+          - name: system.swap.percent
+            value: '0.0'
+          - name: system.cpu.sys
+            value: '0.3'
+          - name: system.mem.kb
+            value: '417972.0'
+          - name: system.disk.persistent.percent
+            value: '6.0'
+          - name: system.disk.system.percent
+            value: '53.0'
+          - name: system.cpu.user
+            value: '0.6'
+          ip: 'null'
+    cf-riak-cs-broker-partition-a5f98d7cc5c1e6c83797: !!metrics.objects.Job
+      instances:
+        0:
+          attributes:
+          - name: system.mem.percent
+            value: '78.0'
+          - name: system.cpu.wait
+            value: '0.0'
+          - name: system.disk.system.inode_percent
+            value: '34.0'
+          - name: system.swap.kb
+            value: '1320.0'
+          - name: system.disk.ephemeral.inode_percent
+            value: '12.0'
+          - name: system.disk.ephemeral.percent
+            value: '19.0'
+          - name: system.healthy
+            value: '1.0'
+          - name: system.load.1m
+            value: '0.0'
+          - name: system.disk.persistent.inode_percent
+            value: '34.0'
+          - name: system.swap.percent
+            value: '0.0'
+          - name: system.cpu.sys
+            value: '0.0'
+          - name: system.mem.kb
+            value: '391804.0'
+          - name: system.disk.persistent.percent
+            value: '46.0'
+          - name: system.disk.system.percent
+            value: '46.0'
+          - name: system.cpu.user
+            value: '0.1'
+          ip: 'null'
+    cf-redis-broker-partition-313baf8885be4665e08d: !!metrics.objects.Job
+      instances:
+        0:
+          attributes:
+          - name: system.mem.percent
+            value: '8.0'
+          - name: system.cpu.wait
+            value: '0.0'
+          - name: system.disk.system.inode_percent
+            value: '36.0'
+          - name: system.swap.kb
+            value: '0.0'
+          - name: system.disk.ephemeral.inode_percent
+            value: '0.0'
+          - name: system.disk.ephemeral.percent
+            value: '2.0'
+          - name: system.healthy
+            value: '1.0'
+          - name: system.load.1m
+            value: '0.0'
+          - name: system.disk.persistent.inode_percent
+            value: '0.0'
+          - name: system.swap.percent
+            value: '0.0'
+          - name: system.cpu.sys
+            value: '0.1'
+          - name: system.mem.kb
+            value: '82784.0'
+          - name: system.disk.persistent.percent
+            value: '0.0'
+          - name: system.disk.system.percent
+            value: '46.0'
+          - name: system.cpu.user
+            value: '0.1'
+          ip: 'null'
+    dea-partition-a5f98d7cc5c1e6c83797: !!metrics.objects.Job
+      instances:
+        0:
+          attributes:
+          - name: system.mem.percent
+            value: '9.0'
+          - name: system.cpu.wait
+            value: '0.1'
+          - name: system.disk.system.inode_percent
+            value: '36.0'
+          - name: system.swap.kb
+            value: '0.0'
+          - name: system.disk.ephemeral.inode_percent
+            value: '12.0'
+          - name: system.disk.ephemeral.percent
+            value: '31.0'
+          - name: system.healthy
+            value: '1.0'
+          - name: system.load.1m
+            value: '0.01'
+          - name: system.swap.percent
+            value: '0.0'
+          - name: system.cpu.sys
+            value: '0.6'
+          - name: system.mem.kb
+            value: '1408660.0'
+          - name: system.disk.system.percent
+            value: '46.0'
+          - name: system.cpu.user
+            value: '1.0'
+          ip: 'null'
+    loggregator-partition-368048666964677f1c9a: !!metrics.objects.Job
+      instances:
+        0:
+          attributes:
+          - name: system.mem.percent
+            value: '8.0'
+          - name: system.cpu.wait
+            value: '0.0'
+          - name: system.disk.system.inode_percent
+            value: '36.0'
+          - name: system.swap.kb
+            value: '0.0'
+          - name: system.disk.ephemeral.inode_percent
+            value: '0.0'
+          - name: system.disk.ephemeral.percent
+            value: '2.0'
+          - name: system.healthy
+            value: '1.0'
+          - name: system.load.1m
+            value: '0.1'
+          - name: system.swap.percent
+            value: '0.0'
+          - name: system.cpu.sys
+            value: '0.1'
+          - name: system.mem.kb
+            value: '77320.0'
+          - name: system.disk.system.percent
+            value: '46.0'
+          - name: system.cpu.user
+            value: '0.3'
+          ip: 'null'
+    nfs_server-partition-368048666964677f1c9a: !!metrics.objects.Job
+      instances:
+        0:
+          attributes:
+          - name: system.mem.percent
+            value: '8.0'
+          - name: system.cpu.wait
+            value: '0.0'
+          - name: system.disk.system.inode_percent
+            value: '36.0'
+          - name: system.swap.kb
+            value: '4.0'
+          - name: system.disk.ephemeral.inode_percent
+            value: '0.0'
+          - name: system.disk.ephemeral.percent
+            value: '1.0'
+          - name: system.healthy
+            value: '1.0'
+          - name: system.load.1m
+            value: '0.0'
+          - name: system.disk.persistent.inode_percent
+            value: '0.0'
+          - name: system.swap.percent
+            value: '0.0'
+          - name: system.cpu.sys
+            value: '0.0'
+          - name: system.mem.kb
+            value: '78888.0'
+          - name: system.disk.persistent.percent
+            value: '3.0'
+          - name: system.disk.system.percent
+            value: '46.0'
+          - name: system.cpu.user
+            value: '0.1'
+          ip: 'null'
+    maximus-partition-368048666964677f1c9a: !!metrics.objects.Job
+      instances:
+        0:
+          attributes:
+          - name: system.mem.percent
+            value: '4.0'
+          - name: system.cpu.wait
+            value: '0.0'
+          - name: system.disk.system.inode_percent
+            value: '34.0'
+          - name: system.swap.kb
+            value: '0.0'
+          - name: system.disk.ephemeral.inode_percent
+            value: '0.0'
+          - name: system.disk.ephemeral.percent
+            value: '4.0'
+          - name: system.healthy
+            value: '1.0'
+          - name: system.load.1m
+            value: '0.0'
+          - name: system.disk.persistent.inode_percent
+            value: '0.0'
+          - name: system.swap.percent
+            value: '0.0'
+          - name: system.cpu.sys
+            value: '0.1'
+          - name: system.mem.kb
+            value: '179876.0'
+          - name: system.disk.persistent.percent
+            value: '0.0'
+          - name: system.disk.system.percent
+            value: '46.0'
+          - name: system.cpu.user
+            value: '0.7'
+          ip: 'null'
+    ssc-gemfire-server-partition-313baf8885be4665e08d: !!metrics.objects.Job
+      instances:
+        0:
+          attributes:
+          - name: system.mem.percent
+            value: '9.0'
+          - name: system.cpu.wait
+            value: '0.0'
+          - name: system.disk.system.inode_percent
+            value: '34.0'
+          - name: system.swap.kb
+            value: '0.0'
+          - name: system.disk.ephemeral.inode_percent
+            value: '2.0'
+          - name: system.disk.ephemeral.percent
+            value: '16.0'
+          - name: system.healthy
+            value: '1.0'
+          - name: system.load.1m
+            value: '0.0'
+          - name: system.disk.persistent.inode_percent
+            value: '0.0'
+          - name: system.swap.percent
+            value: '0.0'
+          - name: system.cpu.sys
+            value: '0.2'
+          - name: system.mem.kb
+            value: '349444.0'
+          - name: system.disk.persistent.percent
+            value: '15.0'
+          - name: system.disk.system.percent
+            value: '53.0'
+          - name: system.cpu.user
+            value: '0.3'
+          ip: 'null'
+        1:
+          attributes:
+          - name: system.mem.percent
+            value: '9.0'
+          - name: system.cpu.wait
+            value: '0.0'
+          - name: system.disk.system.inode_percent
+            value: '34.0'
+          - name: system.swap.kb
+            value: '0.0'
+          - name: system.disk.ephemeral.inode_percent
+            value: '2.0'
+          - name: system.disk.ephemeral.percent
+            value: '16.0'
+          - name: system.healthy
+            value: '1.0'
+          - name: system.load.1m
+            value: '0.0'
+          - name: system.disk.persistent.inode_percent
+            value: '0.0'
+          - name: system.swap.percent
+            value: '0.0'
+          - name: system.cpu.sys
+            value: '0.2'
+          - name: system.mem.kb
+            value: '351004.0'
+          - name: system.disk.persistent.percent
+            value: '15.0'
+          - name: system.disk.system.percent
+            value: '53.0'
+          - name: system.cpu.user
+            value: '0.3'
+          ip: 'null'
+        2:
+          attributes:
+          - name: system.mem.percent
+            value: '9.0'
+          - name: system.cpu.wait
+            value: '0.0'
+          - name: system.disk.system.inode_percent
+            value: '34.0'
+          - name: system.swap.kb
+            value: '0.0'
+          - name: system.disk.ephemeral.inode_percent
+            value: '2.0'
+          - name: system.disk.ephemeral.percent
+            value: '16.0'
+          - name: system.healthy
+            value: '1.0'
+          - name: system.load.1m
+            value: '0.0'
+          - name: system.disk.persistent.inode_percent
+            value: '0.0'
+          - name: system.swap.percent
+            value: '0.0'
+          - name: system.cpu.sys
+            value: '0.2'
+          - name: system.mem.kb
+            value: '358244.0'
+          - name: system.disk.persistent.percent
+            value: '15.0'
+          - name: system.disk.system.percent
+            value: '53.0'
+          - name: system.cpu.user
+            value: '0.4'
+          ip: 'null'
+    ssc-gemfire-broker-partition-313baf8885be4665e08d: !!metrics.objects.Job
+      instances:
+        0:
+          attributes:
+          - name: system.mem.percent
+            value: '4.0'
+          - name: system.cpu.wait
+            value: '0.0'
+          - name: system.disk.system.inode_percent
+            value: '34.0'
+          - name: system.swap.kb
+            value: '0.0'
+          - name: system.disk.ephemeral.inode_percent
+            value: '3.0'
+          - name: system.disk.ephemeral.percent
+            value: '22.0'
+          - name: system.healthy
+            value: '1.0'
+          - name: system.load.1m
+            value: '0.0'
+          - name: system.disk.persistent.inode_percent
+            value: '0.0'
+          - name: system.swap.percent
+            value: '0.0'
+          - name: system.cpu.sys
+            value: '0.1'
+          - name: system.mem.kb
+            value: '154620.0'
+          - name: system.disk.persistent.percent
+            value: '2.0'
+          - name: system.disk.system.percent
+            value: '53.0'
+          - name: system.cpu.user
+            value: '0.0'
+          ip: 'null'
+    consoledb-partition-368048666964677f1c9a: !!metrics.objects.Job
+      instances:
+        0:
+          attributes:
+          - name: system.mem.percent
+            value: '9.0'
+          - name: system.cpu.wait
+            value: '1.1'
+          - name: system.disk.system.inode_percent
+            value: '36.0'
+          - name: system.swap.kb
+            value: '0.0'
+          - name: system.disk.ephemeral.inode_percent
+            value: '4.0'
+          - name: system.disk.ephemeral.percent
+            value: '6.0'
+          - name: system.healthy
+            value: '1.0'
+          - name: system.load.1m
+            value: '0.0'
+          - name: system.disk.persistent.inode_percent
+            value: '2.0'
+          - name: system.swap.percent
+            value: '0.0'
+          - name: system.cpu.sys
+            value: '0.1'
+          - name: system.mem.kb
+            value: '92516.0'
+          - name: system.disk.persistent.percent
+            value: '4.0'
+          - name: system.disk.system.percent
+            value: '46.0'
+          - name: system.cpu.user
+            value: '0.3'
+          ip: 'null'
+    clock_global-partition-368048666964677f1c9a: !!metrics.objects.Job
+      instances:
+        0:
+          attributes:
+          - name: system.mem.percent
+            value: '19.0'
+          - name: system.cpu.wait
+            value: '0.0'
+          - name: system.disk.system.inode_percent
+            value: '36.0'
+          - name: system.swap.kb
+            value: '0.0'
+          - name: system.disk.ephemeral.inode_percent
+            value: '25.0'
+          - name: system.disk.ephemeral.percent
+            value: '25.0'
+          - name: system.healthy
+            value: '1.0'
+          - name: system.load.1m
+            value: '0.0'
+          - name: system.swap.percent
+            value: '0.0'
+          - name: system.cpu.sys
+            value: '0.3'
+          - name: system.mem.kb
+            value: '190320.0'
+          - name: system.disk.system.percent
+            value: '46.0'
+          - name: system.cpu.user
+            value: '0.5'
+          ip: 'null'
+    cloud_controller_worker-partition-368048666964677f1c9a: !!metrics.objects.Job
+      instances:
+        0:
+          attributes:
+          - name: system.mem.percent
+            value: '19.0'
+          - name: system.cpu.wait
+            value: '0.0'
+          - name: system.disk.system.inode_percent
+            value: '36.0'
+          - name: system.swap.kb
+            value: '0.0'
+          - name: system.disk.ephemeral.inode_percent
+            value: '25.0'
+          - name: system.disk.ephemeral.percent
+            value: '25.0'
+          - name: system.healthy
+            value: '1.0'
+          - name: system.load.1m
+            value: '0.0'
+          - name: system.swap.percent
+            value: '0.0'
+          - name: system.cpu.sys
+            value: '0.1'
+          - name: system.mem.kb
+            value: '195832.0'
+          - name: system.disk.system.percent
+            value: '46.0'
+          - name: system.cpu.user
+            value: '0.0'
+          ip: 'null'
+    cf-mysql-broker-partition-a5f98d7cc5c1e6c83797: !!metrics.objects.Job
+      instances:
+        0:
+          attributes:
+          - name: system.mem.percent
+            value: '34.0'
+          - name: system.cpu.wait
+            value: '0.1'
+          - name: system.disk.system.inode_percent
+            value: '34.0'
+          - name: system.swap.kb
+            value: '280.0'
+          - name: system.disk.ephemeral.inode_percent
+            value: '4.0'
+          - name: system.disk.ephemeral.percent
+            value: '11.0'
+          - name: system.healthy
+            value: '1.0'
+          - name: system.load.1m
+            value: '0.0'
+          - name: system.swap.percent
+            value: '0.0'
+          - name: system.cpu.sys
+            value: '0.2'
+          - name: system.mem.kb
+            value: '343684.0'
+          - name: system.disk.system.percent
+            value: '46.0'
+          - name: system.cpu.user
+            value: '0.3'
+          ip: 'null'
+    ccdb-partition-368048666964677f1c9a: !!metrics.objects.Job
+      instances:
+        0:
+          attributes:
+          - name: system.mem.percent
+            value: '9.0'
+          - name: system.cpu.wait
+            value: '0.0'
+          - name: system.disk.system.inode_percent
+            value: '36.0'
+          - name: system.swap.kb
+            value: '0.0'
+          - name: system.disk.ephemeral.inode_percent
+            value: '4.0'
+          - name: system.disk.ephemeral.percent
+            value: '6.0'
+          - name: system.healthy
+            value: '1.0'
+          - name: system.load.1m
+            value: '0.0'
+          - name: system.disk.persistent.inode_percent
+            value: '1.0'
+          - name: system.swap.percent
+            value: '0.0'
+          - name: system.cpu.sys
+            value: '0.0'
+          - name: system.mem.kb
+            value: '92684.0'
+          - name: system.disk.persistent.percent
+            value: '2.0'
+          - name: system.disk.system.percent
+            value: '46.0'
+          - name: system.cpu.user
+            value: '0.2'
+          ip: 'null'
+    ha_proxy-partition-368048666964677f1c9a: !!metrics.objects.Job
+      instances:
+        0:
+          attributes:
+          - name: system.mem.percent
+            value: '8.0'
+          - name: system.cpu.wait
+            value: '0.0'
+          - name: system.disk.system.inode_percent
+            value: '36.0'
+          - name: system.swap.kb
+            value: '0.0'
+          - name: system.disk.ephemeral.inode_percent
+            value: '0.0'
+          - name: system.disk.ephemeral.percent
+            value: '1.0'
+          - name: system.healthy
+            value: '1.0'
+          - name: system.load.1m
+            value: '0.0'
+          - name: system.swap.percent
+            value: '0.0'
+          - name: system.cpu.sys
+            value: '0.2'
+          - name: system.mem.kb
+            value: '82064.0'
+          - name: system.disk.system.percent
+            value: '46.0'
+          - name: system.cpu.user
+            value: '0.3'
+          ip: 'null'
+    riak-cs-partition-a5f98d7cc5c1e6c83797: !!metrics.objects.Job
+      instances:
+        0:
+          attributes:
+          - name: system.mem.percent
+            value: '7.0'
+          - name: system.cpu.wait
+            value: '0.0'
+          - name: system.disk.system.inode_percent
+            value: '34.0'
+          - name: system.swap.kb
+            value: '0.0'
+          - name: system.disk.ephemeral.inode_percent
+            value: '15.0'
+          - name: system.disk.ephemeral.percent
+            value: '27.0'
+          - name: system.healthy
+            value: '1.0'
+          - name: system.load.1m
+            value: '0.03'
+          - name: system.disk.persistent.inode_percent
+            value: '0.0'
+          - name: system.swap.percent
+            value: '0.0'
+          - name: system.cpu.sys
+            value: '0.9'
+          - name: system.mem.kb
+            value: '299768.0'
+          - name: system.disk.persistent.percent
+            value: '0.0'
+          - name: system.disk.system.percent
+            value: '46.0'
+          - name: system.cpu.user
+            value: '2.4'
+          ip: 'null'
+    uaadb-partition-368048666964677f1c9a: !!metrics.objects.Job
+      instances:
+        0:
+          attributes:
+          - name: system.mem.percent
+            value: '9.0'
+          - name: system.cpu.wait
+            value: '0.0'
+          - name: system.disk.system.inode_percent
+            value: '36.0'
+          - name: system.swap.kb
+            value: '0.0'
+          - name: system.disk.ephemeral.inode_percent
+            value: '4.0'
+          - name: system.disk.ephemeral.percent
+            value: '6.0'
+          - name: system.healthy
+            value: '1.0'
+          - name: system.load.1m
+            value: '0.0'
+          - name: system.disk.persistent.inode_percent
+            value: '0.0'
+          - name: system.swap.percent
+            value: '0.0'
+          - name: system.cpu.sys
+            value: '0.0'
+          - name: system.mem.kb
+            value: '95368.0'
+          - name: system.disk.persistent.percent
+            value: '1.0'
+          - name: system.disk.system.percent
+            value: '46.0'
+          - name: system.cpu.user
+            value: '0.1'
+          ip: 'null'
+    uaa-partition-368048666964677f1c9a: !!metrics.objects.Job
+      instances:
+        0:
+          attributes:
+          - name: system.mem.percent
+            value: '37.0'
+          - name: system.cpu.wait
+            value: '0.2'
+          - name: system.disk.system.inode_percent
+            value: '36.0'
+          - name: system.swap.kb
+            value: '264.0'
+          - name: system.disk.ephemeral.inode_percent
+            value: '7.0'
+          - name: system.disk.ephemeral.percent
+            value: '32.0'
+          - name: system.healthy
+            value: '1.0'
+          - name: system.load.1m
+            value: '0.0'
+          - name: system.swap.percent
+            value: '0.0'
+          - name: system.cpu.sys
+            value: '0.1'
+          - name: system.mem.kb
+            value: '378488.0'
+          - name: system.disk.system.percent
+            value: '46.0'
+          - name: system.cpu.user
+            value: '0.3'
+          ip: 'null'
+    dedicated-node-partition-313baf8885be4665e08d: !!metrics.objects.Job
+      instances:
+        0:
+          attributes:
+          - name: system.mem.percent
+            value: '8.0'
+          - name: system.cpu.wait
+            value: '0.0'
+          - name: system.disk.system.inode_percent
+            value: '36.0'
+          - name: system.swap.kb
+            value: '0.0'
+          - name: system.disk.ephemeral.inode_percent
+            value: '0.0'
+          - name: system.disk.ephemeral.percent
+            value: '1.0'
+          - name: system.healthy
+            value: '1.0'
+          - name: system.load.1m
+            value: '0.0'
+          - name: system.disk.persistent.inode_percent
+            value: '0.0'
+          - name: system.swap.percent
+            value: '0.0'
+          - name: system.cpu.sys
+            value: '0.1'
+          - name: system.mem.kb
+            value: '80300.0'
+          - name: system.disk.persistent.percent
+            value: '0.0'
+          - name: system.disk.system.percent
+            value: '46.0'
+          - name: system.cpu.user
+            value: '0.2'
+          ip: 'null'
+        1:
+          attributes:
+          - name: system.mem.percent
+            value: '9.0'
+          - name: system.cpu.wait
+            value: '0.0'
+          - name: system.disk.system.inode_percent
+            value: '36.0'
+          - name: system.swap.kb
+            value: '0.0'
+          - name: system.disk.ephemeral.inode_percent
+            value: '0.0'
+          - name: system.disk.ephemeral.percent
+            value: '1.0'
+          - name: system.healthy
+            value: '1.0'
+          - name: system.load.1m
+            value: '0.0'
+          - name: system.disk.persistent.inode_percent
+            value: '0.0'
+          - name: system.swap.percent
+            value: '0.0'
+          - name: system.cpu.sys
+            value: '0.2'
+          - name: system.mem.kb
+            value: '86544.0'
+          - name: system.disk.persistent.percent
+            value: '0.0'
+          - name: system.disk.system.percent
+            value: '46.0'
+          - name: system.cpu.user
+            value: '0.1'
+          ip: 'null'
+    login-partition-368048666964677f1c9a: !!metrics.objects.Job
+      instances:
+        0:
+          attributes:
+          - name: system.mem.percent
+            value: '36.0'
+          - name: system.cpu.wait
+            value: '0.0'
+          - name: system.disk.system.inode_percent
+            value: '36.0'
+          - name: system.swap.kb
+            value: '2896.0'
+          - name: system.disk.ephemeral.inode_percent
+            value: '8.0'
+          - name: system.disk.ephemeral.percent
+            value: '38.0'
+          - name: system.healthy
+            value: '1.0'
+          - name: system.load.1m
+            value: '0.0'
+          - name: system.swap.percent
+            value: '0.0'
+          - name: system.cpu.sys
+            value: '0.1'
+          - name: system.mem.kb
+            value: '366236.0'
+          - name: system.disk.system.percent
+            value: '46.0'
+          - name: system.cpu.user
+            value: '0.1'
+          ip: 'null'
+    rabbitmq-server-partition-a5f98d7cc5c1e6c83797: !!metrics.objects.Job
+      instances:
+        0:
+          attributes:
+          - name: system.mem.percent
+            value: '2.0'
+          - name: system.cpu.wait
+            value: '0.0'
+          - name: system.disk.system.inode_percent
+            value: '36.0'
+          - name: system.swap.kb
+            value: '0.0'
+          - name: system.disk.ephemeral.inode_percent
+            value: '5.0'
+          - name: system.disk.ephemeral.percent
+            value: '9.0'
+          - name: system.healthy
+            value: '1.0'
+          - name: system.load.1m
+            value: '0.0'
+          - name: system.disk.persistent.inode_percent
+            value: '0.0'
+          - name: system.swap.percent
+            value: '0.0'
+          - name: system.cpu.sys
+            value: '0.2'
+          - name: system.mem.kb
+            value: '199328.0'
+          - name: system.disk.persistent.percent
+            value: '0.0'
+          - name: system.disk.system.percent
+            value: '46.0'
+          - name: system.cpu.user
+            value: '0.2'
+          ip: 'null'
+    rabbitmq-broker-partition-a5f98d7cc5c1e6c83797: !!metrics.objects.Job
+      instances:
+        0:
+          attributes:
+          - name: system.mem.percent
+            value: '11.0'
+          - name: system.cpu.wait
+            value: '0.0'
+          - name: system.disk.system.inode_percent
+            value: '36.0'
+          - name: system.swap.kb
+            value: '0.0'
+          - name: system.disk.ephemeral.inode_percent
+            value: '6.0'
+          - name: system.disk.ephemeral.percent
+            value: '24.0'
+          - name: system.healthy
+            value: '1.0'
+          - name: system.load.1m
+            value: '0.0'
+          - name: system.swap.percent
+            value: '0.0'
+          - name: system.cpu.sys
+            value: '0.1'
+          - name: system.mem.kb
+            value: '218920.0'
+          - name: system.disk.system.percent
+            value: '46.0'
+          - name: system.cpu.user
+            value: '0.2'
+          ip: 'null'
+    loggregator_trafficcontroller-partition-368048666964677f1c9a: !!metrics.objects.Job
+      instances:
+        0:
+          attributes:
+          - name: system.mem.percent
+            value: '7.0'
+          - name: system.cpu.wait
+            value: '0.0'
+          - name: system.disk.system.inode_percent
+            value: '36.0'
+          - name: system.swap.kb
+            value: '0.0'
+          - name: system.disk.ephemeral.inode_percent
+            value: '0.0'
+          - name: system.disk.ephemeral.percent
+            value: '2.0'
+          - name: system.healthy
+            value: '1.0'
+          - name: system.load.1m
+            value: '0.0'
+          - name: system.swap.percent
+            value: '0.0'
+          - name: system.cpu.sys
+            value: '0.2'
+          - name: system.mem.kb
+            value: '75660.0'
+          - name: system.disk.system.percent
+            value: '46.0'
+          - name: system.cpu.user
+            value: '0.1'
+          ip: 'null'
+    proxy-partition-a5f98d7cc5c1e6c83797: !!metrics.objects.Job
+      instances:
+        0:
+          attributes:
+          - name: system.mem.percent
+            value: '7.0'
+          - name: system.cpu.wait
+            value: '0.0'
+          - name: system.disk.system.inode_percent
+            value: '34.0'
+          - name: system.swap.kb
+            value: '0.0'
+          - name: system.disk.ephemeral.inode_percent
+            value: '0.0'
+          - name: system.disk.ephemeral.percent
+            value: '0.0'
+          - name: system.healthy
+            value: '1.0'
+          - name: system.load.1m
+            value: '0.0'
+          - name: system.swap.percent
+            value: '0.0'
+          - name: system.cpu.sys
+            value: '0.0'
+          - name: system.mem.kb
+            value: '74116.0'
+          - name: system.disk.system.percent
+            value: '46.0'
+          - name: system.cpu.user
+            value: '0.1'
+          ip: 'null'
+    etcd_server-partition-368048666964677f1c9a: !!metrics.objects.Job
+      instances:
+        0:
+          attributes:
+          - name: system.mem.percent
+            value: '11.0'
+          - name: system.cpu.wait
+            value: '0.4'
+          - name: system.disk.system.inode_percent
+            value: '36.0'
+          - name: system.swap.kb
+            value: '0.0'
+          - name: system.disk.ephemeral.inode_percent
+            value: '1.0'
+          - name: system.disk.ephemeral.percent
+            value: '3.0'
+          - name: system.healthy
+            value: '1.0'
+          - name: system.load.1m
+            value: '0.0'
+          - name: system.disk.persistent.inode_percent
+            value: '0.0'
+          - name: system.swap.percent
+            value: '0.0'
+          - name: system.cpu.sys
+            value: '0.3'
+          - name: system.mem.kb
+            value: '109280.0'
+          - name: system.disk.persistent.percent
+            value: '0.0'
+          - name: system.disk.system.percent
+            value: '46.0'
+          - name: system.cpu.user
+            value: '0.5'
+          ip: 'null'
+    rabbitmq-server-partition-313baf8885be4665e08d: !!metrics.objects.Job
+      instances:
+        0:
+          attributes:
+          - name: system.mem.percent
+            value: '2.0'
+          - name: system.cpu.wait
+            value: '0.0'
+          - name: system.disk.system.inode_percent
+            value: '36.0'
+          - name: system.swap.kb
+            value: '0.0'
+          - name: system.disk.ephemeral.inode_percent
+            value: '5.0'
+          - name: system.disk.ephemeral.percent
+            value: '9.0'
+          - name: system.healthy
+            value: '1.0'
+          - name: system.load.1m
+            value: '0.0'
+          - name: system.disk.persistent.inode_percent
+            value: '0.0'
+          - name: system.swap.percent
+            value: '0.0'
+          - name: system.cpu.sys
+            value: '0.4'
+          - name: system.mem.kb
+            value: '201908.0'
+          - name: system.disk.persistent.percent
+            value: '0.0'
+          - name: system.disk.system.percent
+            value: '46.0'
+          - name: system.cpu.user
+            value: '0.6'
+          ip: 'null'
+    collector-partition-368048666964677f1c9a: !!metrics.objects.Job
+      instances:
+        0:
+          attributes:
+          - name: system.mem.percent
+            value: '11.0'
+          - name: system.cpu.wait
+            value: '0.3'
+          - name: system.disk.system.inode_percent
+            value: '36.0'
+          - name: system.swap.kb
+            value: '0.0'
+          - name: system.disk.ephemeral.inode_percent
+            value: '9.0'
+          - name: system.disk.ephemeral.percent
+            value: '15.0'
+          - name: system.healthy
+            value: '1.0'
+          - name: system.load.1m
+            value: '0.0'
+          - name: system.swap.percent
+            value: '0.0'
+          - name: system.cpu.sys
+            value: '0.1'
+          - name: system.mem.kb
+            value: '114136.0'
+          - name: system.disk.system.percent
+            value: '46.0'
+          - name: system.cpu.user
+            value: '0.2'
+          ip: 'null'
+    nats-partition-368048666964677f1c9a: !!metrics.objects.Job
+      instances:
+        0:
+          attributes:
+          - name: system.mem.percent
+            value: '7.0'
+          - name: system.cpu.wait
+            value: '0.0'
+          - name: system.disk.system.inode_percent
+            value: '36.0'
+          - name: system.swap.kb
+            value: '0.0'
+          - name: system.disk.ephemeral.inode_percent
+            value: '0.0'
+          - name: system.disk.ephemeral.percent
+            value: '2.0'
+          - name: system.healthy
+            value: '1.0'
+          - name: system.load.1m
+            value: '0.0'
+          - name: system.swap.percent
+            value: '0.0'
+          - name: system.cpu.sys
+            value: '0.3'
+          - name: system.mem.kb
+            value: '74116.0'
+          - name: system.disk.system.percent
+            value: '46.0'
+          - name: system.cpu.user
+            value: '0.1'
+          ip: 'null'

@@ -31,7 +31,7 @@ public class MetricsApplication implements CommandLineRunner{
 
     @Override
     public void run(String... strings) throws Exception {
-        Set<ObjectInstance> objectInstances =  clientConnector.queryMBeans(new ObjectName("org.cloudfoundry:deployment=untitled_dev,*"), null);
+        Set<ObjectInstance> objectInstances =  clientConnector.queryMBeans(new ObjectName("org.cloudfoundry:*"), null);
         Metric metric = new Metric();
         for(ObjectInstance instance: objectInstances) {
             MBeanInfo beanInfo = clientConnector.getMBeanInfo(instance.getObjectName());
