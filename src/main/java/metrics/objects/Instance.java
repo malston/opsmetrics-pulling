@@ -2,9 +2,7 @@ package metrics.objects;
 
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class Instance {
 
@@ -18,7 +16,7 @@ public class Instance {
     }
 
     String ip;
-    
+
     List<Attribute> attributes = new ArrayList<Attribute>();
 
     public List<Attribute> getAttributes() {

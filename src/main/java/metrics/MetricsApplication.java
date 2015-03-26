@@ -13,7 +13,6 @@ import javax.management.MBeanServerConnection;
 import javax.management.ObjectInstance;
 import javax.management.ObjectName;
 import java.io.File;
-import java.io.IOException;
 import java.util.Set;
 
 @SpringBootApplication

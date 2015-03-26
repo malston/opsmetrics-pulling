@@ -6,17 +6,17 @@ import org.springframework.stereotype.Component;
 @ConfigurationProperties(prefix = "jmx")
 @Component
 public class JmxConfig {
-    String url;
+    String host;
     String password;
     String username;
     String file;
 
-    public String getUrl() {
-        return url;
+    public String getHost() {
+        return host;
     }
 
-    public void setUrl(String url) {
-        this.url = url;
+    public void setHost(String host) {
+        this.host = host;
     }
 
     public String getPassword() {
