@@ -12,6 +12,8 @@ import javax.management.MBeanInfo;
 import javax.management.MBeanServerConnection;
 import javax.management.ObjectInstance;
 import javax.management.ObjectName;
+import java.io.File;
+import java.io.IOException;
 import java.util.Set;
 
 @SpringBootApplication
@@ -20,6 +22,9 @@ public class MetricsApplication implements CommandLineRunner{
 
     @Autowired
     MBeanServerConnection clientConnector;
+    
+    @Autowired
+    DumpConfig dumpConfig;
     
     public static void main(String[] args) {
         SpringApplication.run(MetricsApplication.class, args);
@@ -35,7 +40,12 @@ public class MetricsApplication implements CommandLineRunner{
             object.setObjectName(instance.getObjectName());
             object.setInfo(beanInfo);
             metric.addJob(object, clientConnector);
-            System.out.println(metric.toYaml());
         }
+        File file = new File(dumpConfig.getFile());
+        if(!file.exists()){
+            file.createNewFile();
+        }
+        metric.toYaml(file);
     }
+    
 }

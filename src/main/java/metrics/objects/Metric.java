@@ -1,10 +1,16 @@
 package metrics.objects;
 
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.yaml.snakeyaml.DumperOptions;
 import org.yaml.snakeyaml.Yaml;
 
 import javax.management.MBeanAttributeInfo;
 import javax.management.MBeanServerConnection;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.*;
 
 public class Metric {
@@ -12,6 +18,7 @@ public class Metric {
     public Map<String, Job> getJobs() {
         return jobs;
     }
+    private Logger logger = LoggerFactory.getLogger(Metric.class);
     
     public void addJob(MBeanObject mBean, MBeanServerConnection connector) throws Exception{
         Hashtable<String, String> table = mBean.objectName.getKeyPropertyList();
@@ -27,7 +34,6 @@ public class Metric {
         for(MBeanAttributeInfo atr: atrs){
             Attribute attribute = new Attribute();
             attribute.setName(atr.getName());
-            attribute.setDescription(atr.getDescription());
             attribute.setValue(connector.getAttribute(mBean.getObjectName(), atr.getName()).toString());
             attributes.add(attribute);
         }
@@ -36,9 +42,12 @@ public class Metric {
         
     }
     
-    public String toYaml(){
-        Yaml yaml = new Yaml(new org.yaml.snakeyaml.constructor.Constructor());
-        return yaml.dump(jobs);
+    public void toYaml(File file) throws IOException {
+        DumperOptions options = new DumperOptions();
+        options.setDefaultFlowStyle(DumperOptions.FlowStyle.BLOCK);
+        Yaml yaml = new Yaml(options);
+        logger.info("Dump the metrics to " + file.getName());
+        yaml.dump(jobs, new FileWriter(file));
     }
 
     Map<String, Job> jobs = new HashMap<String, Job>();
