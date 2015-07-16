@@ -11,7 +11,8 @@
 export JMX_HOST=172.16.1.42
 export JMX_USERNAME=jmxadmin
 export JMX_PASSWORD=jmxadmin
-export DUMP_FILE=metrics.yml (Default to be metrics.yml)
+export DUMP_FILE=metrics.csv (Default to be metrics.yml)
+export DUMP_FORMAT=csv (Default is yaml)
   ```
   * Run
   ```

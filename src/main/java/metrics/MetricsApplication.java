@@ -44,8 +44,11 @@ public class MetricsApplication implements CommandLineRunner{
         if(!file.exists()){
             file.createNewFile();
         }
-//        metric.toYaml(file);
-        metric.toCsv(file);
+        if ("csv".equalsIgnoreCase(dumpConfig.getFormat())) {
+            metric.toCsv(file);
+        } else {
+          metric.toYaml(file);
+        }
     }
     
 }

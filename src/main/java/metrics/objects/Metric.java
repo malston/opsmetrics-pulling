@@ -82,9 +82,9 @@ public class Metric {
 		writer.append(',');
 		writer.append("ip");
 		writer.append(',');
-		writer.append("Metricname");
+		writer.append("Metric Name");
 		writer.append(',');
-		writer.append("Metricvalue");
+		writer.append("Metric Value");
 		writer.append('\n');
 		for (String component : jobs.keySet()) {
 			Map<String, Job> jobMap = jobs.get(component);
@@ -94,13 +94,13 @@ public class Metric {
 				for (Integer instanceName : instanceMap.keySet()) {
 					Instance instance = instanceMap.get(instanceName);
 					for (Attribute attribute : instance.getAttributes()) {
-						writer.append(component).append(',');
-						writer.append(objectName).append(',');
+						writer.append(component.replace(',', ':')).append(',');
+						writer.append(objectName.replace(',', ':')).append(',');
 						writer.append(instanceName + "").append(',');
 						writer.append(instance.getIp()).append(',');
-						writer.append(attribute.getName());
+						writer.append(attribute.getName().replace(',', ':'));
 						writer.append(',');
-						writer.append(attribute.getValue());
+						writer.append(attribute.getValue().replace(',', ':'));
 						writer.append('\n');
 					}
 				}
