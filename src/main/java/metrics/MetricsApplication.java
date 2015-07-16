@@ -44,7 +44,8 @@ public class MetricsApplication implements CommandLineRunner{
         if(!file.exists()){
             file.createNewFile();
         }
-        metric.toYaml(file);
+//        metric.toYaml(file);
+        metric.toCsv(file);
     }
     
 }
